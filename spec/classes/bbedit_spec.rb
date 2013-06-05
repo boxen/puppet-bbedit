@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'bbedit' do
   it do
     should contain_package('BBEdit').with({
-      :source   => 'http://pine.barebones.com/files/BBEdit_10.5.3.dmg',
+      :source   => 'http://pine.barebones.com/files/BBEdit_10.5.4.dmg',
       :provider => 'appdmg'
     })
   end
