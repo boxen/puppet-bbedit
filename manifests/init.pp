@@ -4,9 +4,12 @@
 # Usage:
 #
 #   include bbedit
-class bbedit {
+class bbedit (
+  $version = '10.5.13',
+){
   package { 'BBEdit':
-    source   => 'http://pine.barebones.com/files/BBEdit_10.5.10.dmg',
+    ensure   => 'installed',
+    source   => "http://pine.barebones.com/files/BBEdit_${version}.dmg",
     provider => 'appdmg'
   }
 }
